@@ -1,0 +1,287 @@
+/*  DESIGN E LAYOUT FEITO POR GAIA DESENVOLVIMENTO WEB E UX/UI DESIGN  */
+/* * * * * Definindo variáveis e setando configurações  * * * * */
+:root {
+  --laranja-principal: #FF8106;
+  --preto-principal: #0D0D0D;
+  --amarelo-principal: #e9ab01;
+  --preto-backgroun: #262626;
+  --branco-texto: #cdcdcd;
+  --fonte-principal: 'Roboto Condensed', sans-serif;
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.body {
+  margin: 0;
+  padding: 0;
+
+}
+
+
+/* todo MediaQuery até 490px =============================== */
+
+@media screen and (max-width: 490px) {
+  /* ! CARROSSEL INSTITUCIONAL */
+
+  .banner_imagens img{
+    width: 100vw;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next{
+    color: var(--preto-principal);
+  }
+  /* * ANIMAÇÃO TEXTO PRODUTOS */
+  /* !ANIMAÇÃO DOS TEXTOS */
+  .apresentacao_topico p {
+    transform: translateX(200px);
+    opacity: 0;
+  }
+  
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateX(200px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  .apresentacao_topico_1 {
+    animation: slideIn 1.5s ease 0.5s forwards;
+    /* Duração de 1 segundo, atraso de 0.5 segundos */
+  }
+
+  .apresentacao_topico_2 {
+    animation: slideIn 1.5s ease 1s forwards;
+    /* Duração de 1 segundo, atraso de 1 segundo */
+  }
+
+  .apresentacao_topico_3 {
+    animation: slideIn 1.5s ease 1.5s forwards;
+    /* Duração de 1 segundo, atraso de 1.5 segundos */
+  }
+
+  .apresentacao_topico_4 {
+    animation: slideIn 1.5s ease 2.0s forwards;
+    /* Duração de 1 segundo, atraso de 1.5 segundos */
+  }
+
+  .apresentacao_texto span {
+    font-weight: 800;
+  }
+
+  .apresentacao_topico {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+    text-align: justify;
+    align-items: left;
+    padding: 1rem 3rem;
+    color: var(--branco-texto);
+    font-size: 16px;
+    font-family: var(--fonte-principal);
+
+  }
+
+  .apresentacao_topico i {
+    color: var(--amarelo-principal);
+  }
+
+  /* todo CARROSSEL PRODUTOS */
+  .swiper {
+    width: 100%;
+    background-color: var(--laranja-principal);
+    
+    
+    
+  }
+
+  .swiper-wrapper {
+    width: 100vw;
+    padding: 2rem;
+
+  }
+
+  .swiper-slide {
+    width: 100vw;
+    
+    
+  }
+
+  .swiper-slide img {
+    width: 80vw;
+    background-color: #fff;
+    border-radius: 16px;
+
+
+  }
+  
+
+}
+/* todo MediaQuery  491px / 767px =============================== */
+@media screen and (min-width: 491px) and (max-width: 767px){
+  .swiper-desktop{
+    display: none;
+  }
+}
+
+/* todo MediaQuery  TELAS GRANDES 1201px /  =============================== */
+@media screen and (min-width: 1201px) {
+  /* ! CARROSSEL INSTITUCIONAL */
+
+  .banner_imagens img{
+    width: 100vw;
+  }
+
+
+
+
+  /* * ANIMAÇÃO TEXTO PRODUTOS */
+  /* !ANIMAÇÃO DOS TEXTOS */
+  .apresentacao_topico p {
+    transform: translateX(200px);
+    opacity: 0;
+  }
+
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateX(200px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  .apresentacao_topico_1 {
+    animation: slideIn 1.5s ease 0.5s forwards;
+    /* Duração de 1 segundo, atraso de 0.5 segundos */
+  }
+
+  .apresentacao_topico_2 {
+    animation: slideIn 1.5s ease 1s forwards;
+    /* Duração de 1 segundo, atraso de 1 segundo */
+  }
+
+  .apresentacao_topico_3 {
+    animation: slideIn 1.5s ease 1.5s forwards;
+    /* Duração de 1 segundo, atraso de 1.5 segundos */
+  }
+
+  .apresentacao_topico_4 {
+    animation: slideIn 1.5s ease 2.0s forwards;
+    /* Duração de 1 segundo, atraso de 1.5 segundos */
+  }
+
+  .apresentacao_texto span {
+    font-weight: 900;
+  }
+
+  .apresentacao_topico {
+    padding-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+    align-items: flex-start;
+    justify-content: center;
+    color: var(--branco-texto);
+    font-size: 22px;
+    width: 100vw;
+    margin-left: 30vw;
+    padding-bottom: 4rem;
+    font-family: var(--fonte-principal);
+
+  }
+  
+ 
+
+  .apresentacao_topico i {
+    color: var(--amarelo-principal);
+  }
+
+  /* todo CARROSSEL PRODUTOS */
+  
+  .swiper {
+    width: 100%;
+    background-color: var(--laranja-principal);
+    
+    
+    
+  }
+
+  .swiper-wrapper {
+    width: 100vw;
+    padding: 2rem;
+
+  }
+
+  .swiper-slide {
+    width: 100vw;
+    
+    
+  }
+
+  .swiper-slide img {
+    width: 25vw;
+    background-color: #fff;
+    border-radius: 16px;
+
+  }
+  
+
+  .footer_whatsapp {
+    border: 1px solid var(--branco-texto);
+    min-width: max-content;
+    background-color: var(--branco-texto);
+    border-radius: 12px;
+    margin: 0 auto;
+    margin-bottom: 4rem;
+    display: flex;
+    padding: 1.5rem;
+    align-items: center;
+    text-decoration: none;
+  }
+
+  .footer_whatsapp:hover {
+    border: 1px solid var(--laranja-principal);
+    background-color: var(--amarelo-principal);
+  }
+
+  .footer_whatsapp i {
+    color: var(--preto-principal);
+    padding-right: 1rem;
+
+  }
+
+  .footer_whatsapp a {
+    color: var(--preto-principal);
+    display: flex;
+    align-items: center;
+    font-family: var(--fonte-principal);
+    font-size: 32px;
+    font-weight: 700;
+
+  }
+
+  a:any-link {
+    text-decoration: none;
+  }
+
+  .copyright p {
+    font-family: var(--fonte-principal);
+    font-size: 22px;
+    color: var(--branco-texto);
+    padding-bottom: 1rem;
+    text-align: center;
+  }
+}

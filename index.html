@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- Ícone na Aba do Navegado -->
+    <link rel="icon" href="./assets/logo.jpg" />
+    <!-- Folha de estilos -->
+    <link rel="stylesheet" href="./style.css" />
+    <!-- !teste Carrossel  -->
+    <link rel="stylesheet" href="./gallery.min.css" />
+    <link rel="stylesheet" href="./gallery.theme.css" />
+    <!-- Biblioteca BoxIcons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- Fontes utilizadas -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    
+
+    <!-- Swipper JS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> 
+
+    <script defer src="./script/animacoes.js"></script>
+    <script defer src="./script/hamburguer.js"></script>
+    <script defer src="./script/carrosselBanner.js"></script>
+    
+    
+    
+    <title>Re Padrões</title>
+  </head>
+
+  <body>
+    <!-------------------------------------- HEADER  -->
+    <!------------------------------------------------->
+    <header class="header">
+      <div class="header_logo">
+        <img src="./assets/logo.svg" alt="Logo Re Padrões" />
+      </div>
+      <!-- todo BARRA DE NAVEGAÇÃO QUE INCLUI O MENU HAMBURGUER E A VERSÃO TELAS MAIORES -->
+      <div class="navbar">
+        <!-- ? MENU HAMBURGUER -->
+        <div class="menu_hamburguer" id="menu_hamburguer">
+          <i class="bx bx-menu bx-lg"></i>
+        </div>
+      </div>
+      <div class="menu" id="menu">
+        <div class="menu_btn">
+            <a href="./produtos.html">Produtos</a>
+        </div>
+        <div class="menu_btn">
+            <a href="https://wa.me/5562995187315">Orçamento</div></a>
+        </div>
+    </div>
+    </header>
+
+    
+    <!-- TODO CARROSSEL  JS -->
+    <div class="banner" id="bannerExemplo">
+      <div class="slides">
+        <div class="slide">
+          <img src="./banners/banner_desktop_1.png">
+        </div>
+        <div class="slide">
+          <img src="./banners/banner_desktop_2.png">
+        </div>
+        <div class="slide">
+          <img src="./banners/banner_desktop_3.png">
+        </div>
+      </div>
+    </div>
+
+    <div class="pagination">
+      <div class="page active"></div>
+      <div class="page"></div>
+      <div class="page"></div>
+  </div>
+    <div class="buttons">
+      <button onclick="prevPage();"><img src="./banners/icon_previous.png"></button>
+      <button onclick="nextPage();"><img src="./banners/icon_next.png"></button>
+    </div>
+    
+    
+    <!-- todo EMPRESA E SERVIÇOS -->
+    <div class="container_apresentacao">
+      <h1>Conheça nossa trajetória</h1>
+      <div class="apresentacao_texto">
+        <p class="apresentacao_texto_1" id="animatedP">
+          Bem-vindo à RE Padrões, somos uma empresa com mais de <span>20 anos de
+          mercado em Anápolis</span>, e na constante busca em <span>evoluir</span> nossos serviços e
+          atender com qualidade nossos clientes.
+        </p>
+        <p class="apresentacao_texto_2">
+          Hoje, nos dedicamos com excelência e eficiência ao segmento de
+          <span>fabricação e instalação de Padrões Elétricos. Incorporamos nossa
+          experiência e qualidade em todos os nossos serviços.
+        </p>
+        <p class="apresentacao_texto_3">
+          Estamos comprometidos em oferecer Padrões Elétricos, Muretas de
+          Condomínios e áreas rurais, Caixas para hidrômetros, e muito mais.
+        <span>Venha conhecer</span> nossos produtos e serviços.
+        </p>
+      </div>
+      <div class="apresentacao_display">
+        <img src="./assets/display_1.png">
+        <img src="./assets/display_2.png">
+        <img src="./assets/display_3.png">
+        <img src="./assets/display_4.png">
+      </div>
+    </div>
+
+    <div class="container_servicos">
+      <h2>Serviços de Qualidade!</h2>
+      <div class="servicos_box">
+        <div class="box_imagens">
+          <img src="./assets/elipse_1.png">
+          <img src="./assets/elipse_2.png">
+        </div>
+        <h3>Instalação de Padrões Equatorial e Kit Saneago</h3>
+      </div>
+    </div>
+    <div class="servicos_imagens">
+      <img src="./assets/servico_1.png">
+      <img src="./assets/servico_2.png">
+      <img src="./assets/servico_3.png">
+      <img src="./assets/servico_4.png">
+
+    </div>
+
+    <!-- todo FOOTER ------------------------------ -->
+    <footer>
+      <div class="container_footer">
+        <div class="footer_logo">
+          <img src="./assets/logo_footer.svg">
+        </div>
+        
+        <div class="footer_mapa">
+          <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3828.0385594521113!2d-48.967415725375!3d-16.371998037441923!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935ea354c81a714b%3A0xf4af28f8407c8d71!2sMB%20PADR%C3%95ES!5e0!3m2!1spt-BR!2sbr!4v1705516732058!5m2!1spt-BR!2sbr"
+              width="430" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="footer_endereco">
+          <p>Rua Milagre, SN, Quadra 14 Lote 02, Jardim Progresso Anápolis, Goiás</p>
+        </div>
+        <div class="footer_whatsapp">
+          <a href="https://wa.me/5562995187315" target="_blank"><i class='bx bxl-whatsapp bx-sm'></i>Entre em Contato</a>
+        </div>
+        <div class="footer_desktop">
+          <a href="https://wa.me/5562995187315" target="_blank"><i class='bx bxl-whatsapp bx-lg bx-tada'></i>Entre em Contato</a>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Criado por GAIA Desenvolvimento Web e UX/UI Design.</p>
+      </div>
+    </footer>
+    
+  </body>
+</html>
